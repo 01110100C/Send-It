@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <meta charset="UTF-8" />
+    <title>Send It</title>
+</head>
+<body>
+    <h1> Send It </h1>
+
+    <!--Creating registration form that connects to the database to save user log in information 
+    and date of account creation. -->
+    <form method="POST" action="">
+    <!-- Username field -->
+        <div class="field">
+            <label for="Username">Username</label>
+            <input type="text" id="username" name="username" value="<?= htmlspecialchars($_POST['username'] ?? '')?>" required />
+        </div>
+    <!-- Password field -->
+        <div class="field">
+            <label for="Password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Min. 8 characters" maxlength="128"required />
+        </div>
+    <!-- Confirm password field -->
+        <div class="field">
+            <label for="Confirm Password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Min. 8 characters" maxlength="128" required />
+        </div>  
+    <!-- Submit button -->
+        <div class="field">
+            <button type="submit" name="submit">Register</button>
+        </div>
+
+    </form>
+</body>
+</html>

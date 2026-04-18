@@ -12,5 +12,6 @@ aims to be the perfect place to help climbers track climbs, make progress, and c
   <li>JavaScript</li>
   <li>CSS</li>
   <li>Python</li>
+  <li>PHP<li>
 </ol>
 
