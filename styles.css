@@ -4,9 +4,6 @@ body {
     color: darkgrey;
     font-weight: 300;
     padding: 2rem; 
-    align-items: center;
-    display: flex;
-    justify-content: center;
 }
 
 .field {
@@ -17,4 +14,13 @@ h1 {
     font-size: 3rem;
     margin-bottom: 2rem;
     text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    align-items: center;
 }

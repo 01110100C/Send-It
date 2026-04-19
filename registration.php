@@ -4,18 +4,23 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
     <meta charset="UTF-8" />
-    <title>Send It</title>
+    <title>Register</title>
 </head>
 <body>
-    <h1> Send It </h1>
+    <?php
+    <h2 style="text-align: center;"> Sign up here </h2>
 
-    <!--Creating registration form that connects to the database to save user log in information 
+
+    
+
+
+      <!--Creating registration form that connects to the database to save user log in information 
     and date of account creation. -->
     <form method="POST" action="">
     <!-- Username field -->
         <div class="field">
             <label for="Username">Username</label>
-            <input type="text" id="username" name="username" value="<?= htmlspecialchars($_POST['username'] ?? '')?>" required />
+            <input type="text" id="username" name="username" value="<?= htmlspecialchars($_POST['username'] ?? '') ?>" required />
         </div>
     <!-- Password field -->
         <div class="field">
@@ -35,3 +40,4 @@
     </form>
 </body>
 </html>
+
