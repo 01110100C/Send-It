@@ -7,12 +7,8 @@
     <title>Register</title>
 </head>
 <body>
-    <?php
+   
     <h2 style="text-align: center;"> Sign up here </h2>
-
-
-    
-
 
       <!--Creating registration form that connects to the database to save user log in information 
     and date of account creation. -->
