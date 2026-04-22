@@ -4,13 +4,12 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
     <meta charset="UTF-8" />
-    <title>Register Account</title>
+    <title>Log In Page </title>
 </head>
-
 <body>
     <main>
-       
+
     </main>
+    
 </body>
 </html>
-
