@@ -9,7 +9,20 @@
 
 <body>
     <main>
-       
+       <form action="">
+                    <label for="username">Username:</label>
+                    <input type="text" placeholder="Enter a username" required />
+                    <br>
+                    <label for="password">Password:</label>
+                    <input type="password" placeholder="Enter a password" required />
+                    <br>
+                    <input type="password" placeholder="Confirm password" required />
+                    <div class="wrap">
+                    <button type="submit">Log In</button>
+                    </div>
+                </form>
+        
+            <a href="index.php"> Go Back </a>    
     </main>
 </body>
 </html>
