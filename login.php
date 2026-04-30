@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Log In Page </title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=<?= filemtime('style.css') ?>" />
     <script src="script.js"></script>
 </head>
 <body>
@@ -22,7 +22,8 @@
                     </div>
                 </form>
             </div>
+
+<button type="button" class="buttons" onclick="location.href='index.php'">GO BACK</button>
 </div>
-<a href="index.php"> Go Back </a>
 </body>
 </html>

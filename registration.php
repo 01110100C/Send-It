@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=<?= filemtime('style.css') ?>" />
     <script src="script.js"></script>
     <meta charset="UTF-8" />
     <title>Register Account</title>
@@ -22,7 +22,7 @@
                     </div>
                 </form>
         
-            <a href="index.php"> Go Back </a>    
+               <button type="button" class="buttons" onclick="location.href='index.php'">GO BACK</button>
     </main>
 </body>
 </html>
