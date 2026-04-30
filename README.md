@@ -1,4 +1,5 @@
 <h1 align=center> Send It </h1>
+ <img src="send_it_logo_rainier_realistic.svg" alt="project logo" width="200" height = "150" style="border-radius: 15px;>">
 <h3 align=center> Software Development Capstone Project </h3>
 <h2>What is it?</h2>
 <p> Send It is a full stack web application that allows rock climbers to log their daily climbs, connect with friends, find local gyms, compete with others, and much more.
