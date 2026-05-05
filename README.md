@@ -1,5 +1,5 @@
 <h1 align=center> Send It </h1>
- <img src="send_it_logo_rainier_realistic.svg" alt="project logo" width="200" height = "150" style="border-radius: 15px; align: center;>">
+ <img src="SenditLogo.png" alt="project logo" width="400" height = "350" style="border-radius: 15px;" align=center>
 <h3 align=center> Software Development Capstone Project </h3>
 <h2>What is it?</h2>
 <p> Send It is a full stack web application that allows rock climbers to log their daily climbs, connect with friends, find local gyms, compete with others, and much more.
@@ -16,3 +16,13 @@ aims to be the perfect place to help climbers track climbs, make progress, and c
   <li> CSS </li>
 </ol>
 
+<h2 align=center> Features </h2>
+<br>
+<h4 align=center> Community Feed </h4>
+<p> Easily see other climbers posts. The community feed displays climbs that your friends or other local climbers are posting. </p>
+<br>
+<h4 align=center> Specialized Training Plans </h4>
+<p> With our training program users are able to get a customized training plan that is tailored to them and their climbing style. Simply anwser a few questions and we will generate your plan within minutes. </p>
+<br>
+<h4 align=center> Ranked Climbing </h4>
+<p> The ranked feature aims to motivate users to send more and try harder climbs. Points are given based on the grade of the climb. There are 6 ranks the user can work through. There is a leaderboard display, showing you the top 10 users in your current rank. Ranks will be reset every 3 months and users can see there earned badges on their profile. </p>
