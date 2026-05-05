@@ -4,10 +4,10 @@
     <link rel="stylesheet" href="styles.css?v=<?= filemtime('styles.css') ?>" />
     <script src="script.js"></script>
     <meta charset="UTF-8" />
-    <title>Home Page</title>
+    <title>Ranked</title>
 </head>
 <body>
-    <nav id="navbar">
+     <nav id="navbar">
         <div class="logo"> SEND IT </div>
         <ul class="nav-links">
             <li><a href="home.php">Home</a></li>
@@ -16,7 +16,5 @@
             <li><a href="rank.php">Ranked</a></li>
         </ul>
     </nav>
-
-    <h1> Community Feed </h1>
 </body>
 </html>

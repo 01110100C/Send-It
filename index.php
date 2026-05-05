@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="styles.css?v=<?= filemtime('style.css') ?>" />
+    <link rel="stylesheet" href="styles.css?v=<?= filemtime('styles.css') ?>" />
     <script src="script.js"></script>
     <meta charset="UTF-8" />
     <title>Send It Main Page</title>
 </head>
 <body>
-     <h1>Welcome to Send It!</h1>
     <br>
-     <img src="send_it_logo_rainier_realistic.svg" alt="project logo" width="550" height = "400" style="border-radius: 15px;>">
+     <img src="SenditLogo.png" alt="project logo" width="550" height = "400" style="border-radius: 15px;>">
         <div class="description" style="text-color: white; font-size: 20px;">
         <p> Welcome to Send It, your go-to platform for sharing and tracking climbs! </p>
         <p> To get started, please register for an account or log in if you already have one. </p>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Log In Page </title>
-    <link rel="stylesheet" href="styles.css?v=<?= filemtime('style.css') ?>" />
+    <link rel="stylesheet" href="styles.css?v=<?= filemtime('styles.css') ?>" />
     <script src="script.js"></script>
 </head>
 <body>

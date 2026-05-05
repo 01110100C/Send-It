@@ -137,3 +137,59 @@ BUTTONS
     padding: 12px 50px;
   }
 }
+
+/* 
+
+Home Page 
+
+
+*/
+
+/* Navigation Bar */
+
+nav {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100; 
+  display: flex;
+  align-items: center;
+  gap: 4px; 
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  padding: 6px 8px;
+  white-space: nowrap;
+  transition: box-shows 0.3s;
+  background: black;
+
+}
+
+.logo {
+  font-family: 'bebas neue', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: darkgreen;
+  letter-spacing: 2px;
+  padding: 4px 14px; 
+  margin-right: 4px; 
+}
+
+.nav-links{
+display: flex;
+gap: 2px;
+list-style: none;
+}
+
+.nav-links a {
+  display: flex;
+  gap: 2px; 
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 7px 16px;
+  border-radius: 100px;
+  transition: color 0.2s, background 0.2s; 
+  color: #888;
+}
