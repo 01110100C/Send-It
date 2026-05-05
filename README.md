@@ -1,5 +1,7 @@
 <h1 align=center> Send It </h1>
- <img src="SenditLogo.png" alt="project logo" width="400" height = "350" style="border-radius: 15px;" align=center>
+<div style="display: flex; justify-content: center;">
+ <img src="SenditLogo.png" alt="project logo" width="400" height = "350">
+</div>
 <h3 align=center> Software Development Capstone Project </h3>
 <h2>What is it?</h2>
 <p> Send It is a full stack web application that allows rock climbers to log their daily climbs, connect with friends, find local gyms, compete with others, and much more.
