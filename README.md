@@ -1,7 +1,6 @@
 <h1 align=center> Send It </h1>
-<div style="display: flex; justify-content: center;">
+<div align=center>
  <img src="SenditLogo.png" alt="project logo" width="400" height = "350">
-</div>
 <h3 align=center> Software Development Capstone Project </h3>
 <h2>What is it?</h2>
 <p> Send It is a full stack web application that allows rock climbers to log their daily climbs, connect with friends, find local gyms, compete with others, and much more.
@@ -28,3 +27,5 @@ aims to be the perfect place to help climbers track climbs, make progress, and c
 <br>
 <h4 align=center> Ranked Climbing </h4>
 <p> The ranked feature aims to motivate users to send more and try harder climbs. Points are given based on the grade of the climb. There are 6 ranks the user can work through. There is a leaderboard display, showing you the top 10 users in your current rank. Ranks will be reset every 3 months and users can see there earned badges on their profile. </p>
+
+</div>
