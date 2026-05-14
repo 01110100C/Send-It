@@ -16,7 +16,6 @@
             <li><a href="rank.php">Ranked</a></li>
         </ul>
     </nav>
-
     <h1> Community Feed </h1>
 </body>
 </html>
