@@ -16,5 +16,15 @@
             <li><a href="rank.php">Ranked</a></li>
         </ul>
     </nav>
+
+    <div class="profile-container">
+        <h1>Your Profile</h1>
+        <div class="profile-info">
+            <p><strong>Username:</strong> </p>
+            <p><strong>Bio:</strong> </p>
+            <p><strong>Climbing Rank:</strong> </p>
+            <p><strong>Date Joined:</strong> </p>
+        </div>
+    </div>
 </body>
 </html>

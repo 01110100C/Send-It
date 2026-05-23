@@ -16,5 +16,11 @@
             <li><a href="rank.php">Ranked</a></li>
         </ul>
     </nav>
+
+    <div class="training-container">
+        <h1>Training Hub</h1>
+        <p>Welcome to the training hub! Here you can find resources and exercises to improve your skills.</p>
+    </div>  
+        
 </body>
 </html>
