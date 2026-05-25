@@ -50,6 +50,9 @@
     </div>
   </div>
 
+  <br>
+  <br>
+
 
   <!-- BIO -->
     <div class="bio-section">
@@ -62,6 +65,31 @@
 
         </div>
         </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+<!-- User Stats --> 
+ <div class="stats-header">
+    <span class="stats-title">Climbing Stats</span>
+    <div class="section-line"></div>
+</div>
+
+<div class="stats-grid-top">
+<div class="stats-content">
+    <div class="stat-item">
+        <span class="stat-label">Highest Grade:</span>
+        <span class="stat-value"> V8 </span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-label">Total Climbs:</span>
+        <span class="stat-value">150</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-label"> Climbing Streak:</span>
+        <span class="stat-value">30 days</span>
     </div>
 
 </body>

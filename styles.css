@@ -219,12 +219,12 @@ PROFILE PAGE
 
 .bio-section {
     margin-top: 28px; 
-    background: #b8b0a5;
     border-radius: 14px; 
     padding: 22px 26px; 
     border: 1px solid #444;
     position: relative;
     overflow: hidden; 
+    background: black;
 
 }
 
@@ -233,13 +233,65 @@ PROFILE PAGE
     font-size: 1.2rem;
     letter-spacing: 3px;
     margin-bottom: 10px;
-    color: black;
+    color: white;
 }
 
 .bio-content {
     font-size: 14px; 
     line-height: 1.75; 
-    color: #f5f0ea; 
+    color: #e8a045; 
     font-weight: 300; 
+  
 }
 
+/*
+
+
+CLIMBING STATS
+
+*/
+
+.stats-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+    color: white;
+}
+
+ .stat-value {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    color: #e8a045;
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+ 
+  .stat-label {
+    font-size: 11px;
+    color: #b8b0a5;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 6px;
+    font-weight: 500;
+  }
+
+  .stats-grid-top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  
+  .stat-item {
+    background: black;
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+  }
+ 
+
+ 
+ 
