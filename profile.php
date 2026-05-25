@@ -78,7 +78,6 @@
 </div>
 
 <div class="stats-grid-top">
-<div class="stats-content">
     <div class="stat-item">
         <span class="stat-label">Highest Grade:</span>
         <span class="stat-value"> V8 </span>
@@ -91,6 +90,6 @@
         <span class="stat-label"> Climbing Streak:</span>
         <span class="stat-value">30 days</span>
     </div>
-
+</div>
 </body>
 </html>
