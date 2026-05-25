@@ -23,29 +23,46 @@
     <br>
     <br>
 
-    <div class="profile-container">
-        <h1>Your Profile</h1>
-        <div class="profile-info">
-            <p><strong>Username:</strong> </p>
-            <p><strong>Bio:</strong> </p>
-            <p><strong>Climbing Rank:</strong> </p>
-            <p><strong>Date Joined:</strong> </p>
-        </div>
-
-        <div class="profile-actions">
-            <button class="profile-button">Edit Profile</button>
-            <button class="profile-button">View Post History</button>
-            <button class="profile-button">View Ranked History</button>
-            <button class="profile-button">Logout</button>
-        </div>
-
-        <div class="profile-stats">
-            <h2>Climbing Stats</h2>
-            <p><strong>Total Climbs:</strong> </p>
-            <p><strong>Highest Grade:</strong> </p>
-            <p><strong>Average Grade:</strong> </p>
-            <p><strong>Favorite Climb:</strong> </p>
-</div>
+    <div class="profile-header">
+    <!-- Placeholder for profile picture -->
+            <div class="profile-picture">
+                <!-- You can replace this with an actual image source -->
+            </div>
     </div>
+
+    <div class="username">Username</div>
+    <div class="about"> location | climbing since: year </div> 
+
+   <div class="social-row">
+        <div class="social-bar">
+          <strong>17</strong> Friends
+        </div>
+        <div class="social-divider"></div>
+        <div class="social-bar">
+          <strong>48</strong> Following
+        </div>
+        <div class="social-divider"></div>
+        <div class="social-bar">
+          <strong>10</strong> Followers
+        </div>
+        <button class="follow-btn">+ Follow</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- BIO -->
+    <div class="bio-section">
+        <div class="bio-header">Bio</div>
+        <div class="bio-content">
+
+        information about the user and their climbing history. 
+        This can include their favorite climbing styles, notable achievements, and any other relevant information 
+        that gives insight into their climbing journey.
+
+        </div>
+        </div>
+    </div>
+
 </body>
 </html>
