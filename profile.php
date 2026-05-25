@@ -17,6 +17,12 @@
         </ul>
     </nav>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
     <div class="profile-container">
         <h1>Your Profile</h1>
         <div class="profile-info">
@@ -25,6 +31,21 @@
             <p><strong>Climbing Rank:</strong> </p>
             <p><strong>Date Joined:</strong> </p>
         </div>
+
+        <div class="profile-actions">
+            <button class="profile-button">Edit Profile</button>
+            <button class="profile-button">View Post History</button>
+            <button class="profile-button">View Ranked History</button>
+            <button class="profile-button">Logout</button>
+        </div>
+
+        <div class="profile-stats">
+            <h2>Climbing Stats</h2>
+            <p><strong>Total Climbs:</strong> </p>
+            <p><strong>Highest Grade:</strong> </p>
+            <p><strong>Average Grade:</strong> </p>
+            <p><strong>Favorite Climb:</strong> </p>
+</div>
     </div>
 </body>
 </html>
