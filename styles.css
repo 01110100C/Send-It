@@ -301,7 +301,97 @@ CLIMBING STATS
     flex-direction: column;
     align-items: center;
   }
- 
 
+
+  /* 
+
+
+  RANKED PAGE 
+
+
+  */ 
+
+  .lb-table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
  
+    .lb-table th {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--faint);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 0 10px 10px;
+      text-align: left;
+      border-bottom: 0.5px solid var(--border);
+    }
+ 
+ /* ── Reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+    :root {
+      --bg:        #0e1014;
+      --surface:   #181b21;
+      --surface2:  #1f2229;
+      --border:    rgba(255,255,255,0.08);
+      --border-md: rgba(255,255,255,0.14);
+      --text:      #e8e9ec;
+      --muted:     #7a7d87;
+      --faint:     #3a3d46;
+ 
+      /* Rank colors: bg, border/accent, dark text */
+      --sandstone-bg:     #2a2620;
+      --sandstone-accent: #9e8c6e;
+      --sandstone-text:   #d4c4a8;
+ 
+      --granite-bg:       #22242a;
+      --granite-accent:   #8a8d96;
+      --granite-text:     #c8cad0;
+ 
+      --ruby-bg:          #2a1a1a;
+      --ruby-accent:      #c94040;
+      --ruby-text:        #f09090;
+ 
+      --quartz-bg:        #151f2e;
+      --quartz-accent:    #3a7bd5;
+      --quartz-text:      #7fb4f0;
+ 
+      --emerald-bg:       #152218;
+      --emerald-accent:   #2e9e58;
+      --emerald-text:     #70d498;
+ 
+      --obsidian-bg:      #101012;
+      --obsidian-accent:  #5a5a6e;
+      --obsidian-text:    #a0a0b8;
+ 
+      --diamond-bg:       #1a1530;
+      --diamond-accent:   #8060e0;
+      --diamond-text:     #c0a0ff;
+ 
+      --font-display: 'Barlow Condensed', sans-serif;
+      --font-body:    'Barlow', sans-serif;
+      --radius-sm:    6px;
+      --radius-md:    10px;
+      --radius-lg:    14px;
+    }
+ 
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.5;
+      min-height: 100vh;
+      padding: 2.5rem 1.5rem;
+    }
+
+    
+    .layout {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
  
