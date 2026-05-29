@@ -27,9 +27,10 @@ Global Styles
       color: var(--text);
       font-family: var(--font-body);
       font-size: 15px;
-      line-height: 1.5;
-      min-height: 100vh;
-      padding: 2.5rem 1.5rem;
+      align-items: center;
+      text-align: center;
+
+
     }
 /* 
 
@@ -156,6 +157,8 @@ Home Page
 
 
 */
+
+
 
 /* Navigation Bar */
 
@@ -324,31 +327,5 @@ CLIMBING STATS
 
   */ 
 
-  .lb-table {
-      width: 100%;
-      border-collapse: collapse;
-      table-layout: fixed;
-    }
- 
-    .lb-table th {
-      font-family: var(--font-display);
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--faint);
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      padding: 0 10px 10px;
-      text-align: left;
-      border-bottom: 0.5px solid var(--border);
-    }
- 
- /* ── Reset & base ── */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    
-    .layout {
-      max-width: 780px;
-      margin: 0 auto;
-    }
 
  
