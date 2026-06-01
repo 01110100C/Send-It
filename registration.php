@@ -9,7 +9,7 @@
 
 <body>
     <main>
-       <form action="">
+       <form action="" class = "login-form">
                     <label for="username">Username:</label>
                     <input type="text" placeholder="Enter a username" required />
                     <br>

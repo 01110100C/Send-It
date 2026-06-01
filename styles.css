@@ -44,6 +44,7 @@ Log In Page
     padding: 310px 20px;
     width:500px;
     text-align: center;
+    justify-content: center;
 }
 
 label {
@@ -74,11 +75,6 @@ input{
     text-align: center;
 }
 
-.wrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /*
 

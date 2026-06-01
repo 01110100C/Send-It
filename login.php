@@ -11,7 +11,7 @@
         <h1>Welcome Back</h1>
         <br>
         <h3>Please log in to your account</h3>
-                <form action="">
+                <form action="" class="login-form">
                     <label for="username">Username:</label>
                     <input type="text" placeholder="Enter your username" required />
                     <br>
