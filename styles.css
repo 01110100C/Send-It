@@ -5,33 +5,31 @@ Global Styles
 
 
 */
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 :root {
-      --bg:        #0e1014;
-      --surface:   #181b21;
-      --surface2:  #1f2229;
-      --border:    rgba(255,255,255,0.08);
-      --border-md: rgba(255,255,255,0.14);
-      --text:      #e8e9ec;
-      --muted:     #7a7d87;
-      --faint:     #3a3d46;
-      --font-display: 'Barlow Condensed', sans-serif;
-      --font-body:    'Barlow', sans-serif;
-      --radius-sm:    6px;
-      --radius-md:    10px;
-      --radius-lg:    14px;
+      --blue: #35476E;
+      --black: #000;
+      --white: #fff;
+      --green: #486941;
+      --grey: #ADB1B3;
+
+
     }
+
+  body {
+    background-color: var(--blue);
+    color: var(--grey);
+    font: 16px/1.5 "Press Start 2P", system-ui;
+    text-align: center;
+  }
  
-    body {
-      background: var(--faint);
-      color: var(--text);
-      font-family: var(--font-body);
-      font-size: 15px;
-      align-items: center;
-      text-align: center;
-
-
-    }
+   
 /* 
 
 Log In Page 
@@ -68,13 +66,6 @@ input{
 }
 
 
-.main{
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-    width:500px;
-    text-align: center;
-}
 
 
 /*
@@ -206,123 +197,10 @@ list-style: none;
   color: #888;
 }
 
-/* 
 
 
-PROFILE PAGE 
-
-*/
-
-.social-row {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    margin-top: 12x;
-    flex-wrap: wrap; 
-}
-
-.social-bar {
-  display: flex; 
-  align-items: center;
-  gap: 6px; 
-  font-size: 13px;
-  color: #b8b0a5;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-.bio-section {
-    margin-top: 28px; 
-    border-radius: 14px; 
-    padding: 22px 26px; 
-    border: 1px solid #444;
-    position: relative;
-    overflow: hidden; 
-    background: black;
-
-}
-
-.bio-header {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.2rem;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
-    color: white;
-}
-
-.bio-content {
-    font-size: 14px; 
-    line-height: 1.75; 
-    color: #e8a045; 
-    font-weight: 300; 
   
-}
 
-/*
-
-
-CLIMBING STATS
-
-*/
-
-.stats-title {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.2rem;
-    letter-spacing: 3px;
-    margin-bottom: 16px;
-    color: white;
-}
-
- .stat-value {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 36px;
-    color: #e8a045;
-    letter-spacing: 1px;
-    line-height: 1;
-  }
- 
-  .stat-label {
-    font-size: 11px;
-    color: #b8b0a5;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    margin-top: 6px;
-    font-weight: 500;
-  }
-
-  .stats-grid-top {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-  }
-  
-  .stat-item {
-    background: black;
-    border: 1px solid rgba(255,255,255,0.05);
-    border-radius: 14px;
-    padding: 20px;
-    text-align: center;
-    overflow: hidden;
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .stats-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-
-  /* 
-
-
-  RANKED PAGE 
-
-
-  */ 
 
 
  
