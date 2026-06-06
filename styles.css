@@ -260,3 +260,57 @@ list-style: none;
   font-size: 25px;
   font-weight: bold;
 }
+
+.training-container {
+  display: flex;
+  gap: 15px;
+
+}
+
+.strength-training {
+  background-color: var(--green);
+  border: 4px solid var(--black);
+  color: var(--grey);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.technique-training {
+  background-color: var(--green);
+  border: 4px solid var(--black);
+  color: var(--grey);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  font-size: 15px;
+} 
+
+.fingerboard-training {
+  background-color: var(--green);
+  border: 4px solid var(--black);
+  color: var(--grey);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  font-size: 15px;
+  text-align: left;
+} 
+
+.train-title {
+  color: var(--black);
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tech-injury {
+  font-size: 20px;
+  color: var(--black);
+  font-style: italic;
+  text-align: center;
+}

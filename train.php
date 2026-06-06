@@ -22,12 +22,71 @@
     <br>
     <br>
     <br>
+    <br>
 
 
-    <div class="training-container">
+    <div>
         <h1 style="text-align: center;">Training Hub</h1>
         <p>Welcome to the training hub! Here you can find resources and exercises to improve your skills.</p>
     </div>  
+
+    <div class="training-container">
+        <div class="strength-training">
+            <div class="train-title">
+            <h2>Strength Training</h2>
+            </div>
+            
+        </div> 
+
+        <div class="fingerboard-training">
+            <div class ="train-title">
+            <h2>Hangboard Training</h2>
+            </div>
+            <h4> Hangboards can help develop your finger strength and is an extremely useful tool </p>
+            <p> First step in hand boarding is technique to ensure we are preventing injury </p>
+                <div class="tech-injury">
+                <h4> Injury Prevention </h4>
+                </div>
+                <ol>
+                    <li> Do Not Full Crimp </li>
+                    <p> Full crimping can put excess stress on your fingers, You should hang board with half crimp or open hand grip </p> 
+                    <li> Warm Up </li>
+                    <p> Warm ups should be around 10-15 minutes long. Focus on stretching, easy strenth movements, and cardio </p>
+                    <li> Warm Down </li>
+                    <p> Slowly easy your self out of the hangboard session, do a few easy climbs and light cardio.
+                        This will prevent from blood pooling into your fingers and hands. </p>
+                </ol>
+                    <div class="tech-injury">
+                    <h4> Types of Grip </h4>
+                    </div>
+                    <ul>
+                        <li> Jug </li>
+                        <li> Sloper </li>
+                        <li> Crimp </li>
+                        <li> Pinch </li>
+                        <li> 3-finger pocket </li>
+                        <li> 2-finger pocket </li>
+                        <li> wide pinch </li>
+                        <li> small edge </li>
+                        <li> large edge </li>
+                    </ul>
+
+                        <div class="tech-injury">
+                        <h4> Helpful Articles </h4>
+                        </div>
+                        <ul>
+                            <li><a href="https://www.trainingbeta.com/mark-and-mike-anderson-guide-to-hangboard-training"> Hangboard Training Guide</a></li>
+                            <li><a href="https://www.99boulders.com/beginner-hangboard-training"> 8-Week Hangboarding Workout Plan</a></li>
+                        </ul>
+        </div>
+
+        <div class="technique-training">
+            <div class="train-title">
+            <h2>Technique Training</h2>
+            </div>
+
+        </div>
+    </div>
 
       <footer>
         <p>© 2026 Send It. All rights reserved.</p>
