@@ -28,6 +28,38 @@
     
 
     <h1> Community Feed </h1>
+<div class ="feed"> 
+    <div class="post">
+        <h2>Climber1 sent a V5!</h2>
+        <p> Grade: V5 </p>
+        <p> Location: The Spot </p>
+        <p> Date: 01/01/2026 </p>
+        <p> Comment: "This was a tough one, but I finally sent it!" </p>
+    </div>
+    <div class="post">
+        <h2>Climber2 sent a V3!</h2>
+        <p> Grade: V3 </p>
+        <p> Location: The Cave </p>
+        <p> Date: 01/02/2026 </p>
+        <p> Comment: "Had a great day climbing with friends!" </p>
+</div>
+
+</div>
+
+
+<div class ="friends-online">
+    <h2>Friends Online</h2>
+    <ul>
+        <li>Climber2</li>
+        <li>Climber3</li>
+        <li>Climber4</li>
+    </ul>
+</div>
+
+
+
+
+
     <footer>
         <p>© 2026 Send It. All rights reserved.</p>
     </footer>

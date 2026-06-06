@@ -75,6 +75,7 @@
     <br>
 
 <!-- User Stats --> 
+ <div class="stats-section">
  <div class="stats-header">
     <span class="stats-title">Climbing Stats</span>
     <div class="section-line"></div>
@@ -93,6 +94,7 @@
         <span class="stat-label"> Climbing Streak:</span>
         <span class="stat-value">30 days</span>
     </div>
+</div>
 </div>
   <footer>
         <p>© 2026 Send It. All rights reserved.</p>
