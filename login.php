@@ -1,3 +1,15 @@
+<?php
+session_start();
+
+    include("database.php");
+    include("functions.php");
+
+    $user_data = check_login($con);
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,17 +26,16 @@
         <h1>Welcome Back</h1>
         <br>
         <h3>Please log in to your account</h3>
-                <form action="" class="login-form">
-                    <label for="username">Username:</label>
-                    <input type="text" placeholder="Enter your username" required />
-                    <br>
-                    <label for="password">Password:</label>
-                    <input type="password" placeholder="Enter your password" required />
-                    <div class="wrap">
-                    <button type="submit">Log In</button>
-                    </div>
-                </form>
-            </div>
+
+        <div class="login-form">
+            <form method="post">
+                <input type="text" name="username" placeholder="Username" required><br><br>
+                <input type="password" name="password" placeholder="Password" required><br><br>
+
+                <input type = "submit" value="login"> 
+            </form> 
+        </div>
+    </div>
 
 <button type="button" class="buttons" onclick="location.href='index.php'">GO BACK</button>
 </div>

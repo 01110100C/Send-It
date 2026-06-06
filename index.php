@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+    include("database.php");
+    include("functions.php");
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
