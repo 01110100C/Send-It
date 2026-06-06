@@ -21,4 +21,7 @@
                      <button type="button" class="buttons" onclick="location.href='registration.php'">REGISTER</button>
 
                 </div>
+  <footer>
+        <p>© 2026 Send It. All rights reserved.</p>
+    </footer>
 </body>

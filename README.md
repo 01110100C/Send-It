@@ -29,3 +29,4 @@ aims to be the perfect place to help climbers track climbs, make progress, and c
 <p> The ranked feature aims to motivate users to send more and try harder climbs. Points are given based on the grade of the climb. There are 6 ranks the user can work through. There is a leaderboard display, showing you the top 10 users in your current rank. Ranks will be reset every 3 months and users can see there earned badges on their profile. </p>
 
 </div>
+

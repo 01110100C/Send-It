@@ -28,5 +28,8 @@
 
 <button type="button" class="buttons" onclick="location.href='index.php'">GO BACK</button>
 </div>
+  <footer>
+        <p>© 2026 Send It. All rights reserved.</p>
+    </footer>
 </body>
 </html>

@@ -28,5 +28,8 @@
     
 
     <h1> Community Feed </h1>
+    <footer>
+        <p>© 2026 Send It. All rights reserved.</p>
+    </footer>
 </body>
 </html>

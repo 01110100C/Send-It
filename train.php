@@ -28,6 +28,10 @@
         <h1 style="text-align: center;">Training Hub</h1>
         <p>Welcome to the training hub! Here you can find resources and exercises to improve your skills.</p>
     </div>  
+
+      <footer>
+        <p>© 2026 Send It. All rights reserved.</p>
+    </footer>
         
 </body>
 </html>
