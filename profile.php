@@ -76,6 +76,7 @@
 
 <!-- User Stats --> 
  <div class="stats-section">
+    
  <div class="stats-header">
     <span class="stats-title">Climbing Stats</span>
     <div class="section-line"></div>
