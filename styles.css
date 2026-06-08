@@ -139,14 +139,6 @@ BUTTONS
   }
 }
 
-/* 
-
-Home Page 
-
-
-*/
-
-
 
 /* Navigation Bar */
 
@@ -196,6 +188,13 @@ list-style: none;
   color: #888;
 }
 
+/* 
+
+
+Community Feed 
+
+*/ 
+
 .feed { 
   background-color: var(--green);
   border: 4px solid var(--black);
@@ -229,6 +228,12 @@ list-style: none;
   border-radius: 5px;
 }
 
+/*
+
+Profile Page 
+
+*/
+
 .stats-section {
   background-color: var(--green);
   border: 4px solid var(--black);
@@ -247,6 +252,7 @@ list-style: none;
   padding: 20px;
   max-width: 600px;
   border-radius: 10px;
+
 } 
 
 .stats-header {
@@ -260,6 +266,12 @@ list-style: none;
   font-size: 25px;
   font-weight: bold;
 }
+
+/* 
+
+Training Page 
+
+*/
 
 .training-container {
   display: flex;
