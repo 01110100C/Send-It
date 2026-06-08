@@ -35,6 +35,8 @@
             <div class="train-title">
             <h2>Strength Training</h2>
             </div>
+                        <p> Strength training is an important part of climbing. It can help you climb harder routes and prevent injury.
+                Below are some exercises that can help you build strength for climbing. </p>
             
         </div> 
 

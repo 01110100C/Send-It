@@ -288,6 +288,7 @@ Training Page
   max-width: 600px;
   border-radius: 10px;
   font-size: 15px;
+  text-align: left; 
 }
 
 .technique-training {
