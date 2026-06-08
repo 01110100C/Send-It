@@ -35,9 +35,31 @@
             <div class="train-title">
             <h2>Strength Training</h2>
             </div>
-                        <p> Strength training is an important part of climbing. It can help you climb harder routes and prevent injury.
+                <p> Strength training is an important part of climbing. It can help you climb harder routes and prevent injury.
                 Below are some exercises that can help you build strength for climbing. </p>
             
+                <div class="strength-exercises">
+                    <h4> Strength Training Exercises </h4>
+                </div> 
+                <ul>
+                    <li> Pull-ups </li>
+                    <p> helps building upper body / pull strength </p>
+                    <li> Front Levers </li>
+                    <p> Helps build core strength and finger strength </p>
+                    <li> Hanging Led Raises </li>
+                    <p> Helps build core strength </p>
+                    <li> Hanging L sits </li>
+                    <p> Helps build core strength </p>
+                    <li> Overhead Press</li>
+                    <p> Helps build shoulder strength </p>
+                    <li> Pistol Squats</li>
+                    <p> Helps build leg strength </p>
+                    <li> Hangboard Training </li>
+                    <p> Helps build finger strength </p>
+                    <li> Spray Wall Training </li>
+                    <p> Helps build power and technique </p>
+                </ul>
+
         </div> 
 
         <div class="fingerboard-training">
