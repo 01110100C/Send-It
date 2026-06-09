@@ -84,6 +84,8 @@ session_start();
     <br>
     <br>
 
+<!-- User Climbs -->
+
 <!-- User Stats --> 
  <div class="stats-section">
     
