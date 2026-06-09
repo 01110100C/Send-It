@@ -80,14 +80,13 @@ session_start();
         </div>
     </div>
 
-    <br>
-    <br>
-    <br>
-
 <!-- User Climbs -->
 <div class = "climbs"> 
+    <h2> Recent Climbs </h2>
     <div class = "post">
-        
+        <p> V5 at The Spot </p>
+        <p> Sent on 01/01/2026 </p>
+        <p> "This was a tough one, but I finally sent it!" </p>
     </div>
 </div> 
 

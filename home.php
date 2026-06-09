@@ -45,6 +45,7 @@ session_start();
 -->
 
     <h1> Community Feed </h1>
+<div class ="feed-container">
 <div class ="feed"> 
     <div class="post">
         <h2>Climber1 sent a V5!</h2>
@@ -83,10 +84,16 @@ display that users profile.
 <button type="button" class="buttons" onclick="location.href='findUsers.php'"> Find Friends </button> 
 </div>
 
+</div>
+<br>
+<br>
 <div class = "create"> 
-    <p> click here to create a post <p> 
+    <h3> click here to create a post </h3> 
+        <br>
+        <br>
         <button type="button" class="buttons" onclick="location.href='createClimb.php'">Create Post</button>
 </div>
+
 
 
 
