@@ -28,6 +28,12 @@ Global Styles
     font: 16px/1.5 "Press Start 2P", system-ui;
     text-align: center;
   }
+
+  .li {
+    text-align: left;
+    font-size: 10px; 
+    color: black; 
+  }
  
    
 /* 

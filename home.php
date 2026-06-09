@@ -35,7 +35,14 @@ session_start();
     <br>
     <br>
     <br>
-    
+
+<!-- 
+    Community Feed Display 
+
+    show posts from users that the logged in user currently follows.
+    Should pull from post table in the database. 
+
+-->
 
     <h1> Community Feed </h1>
 <div class ="feed"> 
@@ -56,7 +63,15 @@ session_start();
 
 </div>
 
+<!-- 
+Show people you follow that are also online 
+ 
+include php functions to pull from the profile table to see who the uder follows. 
+take the followers and display the ones currently active on the table. 
 
+Add a find friends button to look up users to add. When a user is looked up and selected it should 
+display that users profile. 
+-->
 <div class ="friends-online">
     <h2>Friends Online</h2>
     <ul>

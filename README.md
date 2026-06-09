@@ -9,13 +9,13 @@ the grade, and leave a few notes regarding the climb then upload it to your prof
 in trainer that can help you take your climbing to the next level. Let us know what areas you are struggling with and we will give you a workout routine to help push you forward. This app
 aims to be the perfect place to help climbers track climbs, make progress, and connect with friends. </p>
 <h2>Technical Stack</h2>
-<ol>
+<ul>
   <li>PHP</li>
   <li>JavaScript</li>
   <li>MySQL</li>
   <li> HTML </li>
   <li> CSS </li>
-</ol>
+</ul>
 
 <h2 align=center> Features </h2>
 <br>

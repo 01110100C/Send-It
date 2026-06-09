@@ -85,6 +85,11 @@ session_start();
     <br>
 
 <!-- User Climbs -->
+<div class = "climbs"> 
+    <div class = "post">
+        
+    </div>
+</div> 
 
 <!-- User Stats --> 
  <div class="stats-section">

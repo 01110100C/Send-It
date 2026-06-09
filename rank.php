@@ -26,7 +26,24 @@
 <h1> Climbing Rankings </h1>
 <p>Climbers ranks are updated daily based on the grade level they are sending and how many sends they have. </p>
 
+<div class = "ranks"> 
+    <p> Bedrock </p>
+    <p> Silver </p> 
+    <p> Granite </p>
+    <p> Quartz </p>
+    <p> Ruby </p>
+    <p> Diamond </p>
+    <p> Emerald </p>
+</div> 
 
+
+
+<div class = "rank-container"> 
+    <div class = "rank"> Rank </div> 
+    <div class = "user-name"> User</div> 
+    <div class = "total-climbs"> Total Climbs </div> 
+    <div class = "best-climb"> Highest Grade </div> 
+</div> 
 
   <footer>
         <p>© 2026 Send It. All rights reserved.</p>
