@@ -79,9 +79,14 @@ display that users profile.
         <li>Climber3</li>
         <li>Climber4</li>
     </ul>
+
+<button type="button" class="buttons" onclick="location.href='findUsers.php'"> Find Friends </button> 
 </div>
 
-
+<div class = "create"> 
+    <p> click here to create a post <p> 
+        <button type="button" class="buttons" onclick="location.href='createClimb.php'">Create Post</button>
+</div>
 
 
 

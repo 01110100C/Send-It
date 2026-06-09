@@ -33,8 +33,9 @@ session_start();
 
     <h4> Fill Out information below </h4> 
 
+<div class = "Climb-Form">
     <form method="post">
-        
+
                 <input type="text" name="Climb Title" placeholder="Title"><br><br>
                 <input type="text" name="Climb Grade" placeholder="Grade"><br><br>
                 <input type="text" name="Climb Info" placeholder="Extra Info"><br><br>
@@ -43,3 +44,4 @@ session_start();
 
                 <input type = "submit" value="submit climb"> 
     </form> 
+</div>
