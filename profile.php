@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+    include("database.php");
+    include("functions.php");
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,13 +43,13 @@
             </div>
     </div>
 
-    <div class="username">Username</div>
-    <div class="about"> location | climbing since: year </div> 
+    <div class="username">
+        <?php echo $_SESSION['username']; ?>
+    </div>
+    <div class="about"> Seattle, Washington | climbing since: 2018 </div>
+     </div> 
 
    <div class="social-row">
-        <div class="social-bar">
-          <strong>17</strong> Friends
-        </div>
         <div class="social-divider"></div>
         <div class="social-bar">
           <strong>48</strong> Following
