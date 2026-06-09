@@ -28,7 +28,10 @@ session_start();
             <li><a href="rank.php">Ranked</a></li>
         </ul>
     </nav>
-
+<br>
+<br>
+<br>
+<br>
     <h1> Create a Climb </h1>
 
     <h4> Fill Out information below </h4> 

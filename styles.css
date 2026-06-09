@@ -333,3 +333,37 @@ Training Page
   font-style: italic;
   text-align: center;
 }
+
+/*
+
+Create Climb Page 
+
+
+*/
+
+.Climb-Form {
+  background-color: var(--green);
+  border: 4px solid var(--black);
+  color: var(--grey);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+
+/*
+
+Find Users Page 
+
+*/
+
+.findUsers {
+  background-color: var(--green);
+  border: 4px solid var(--black);
+  color: var(--grey);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+}

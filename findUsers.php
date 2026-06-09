@@ -28,10 +28,17 @@ session_start();
             <li><a href="rank.php">Ranked</a></li>
         </ul>
     </nav>
+    <br>
+    <br>
+    <br>
+    <br>
 
 <h1> Look up friends by username </h1> 
+<div class = "findUsers">
+    <form method="post">
 <input type="text" name="username" placeholder="Username" required>
 <input type = "submit" value="Search"> 
 <div class="displayUsers">
+</form>
     <!-- Once the username is entered it should display that usernames profile within this div -->
 </div>
