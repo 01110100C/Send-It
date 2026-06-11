@@ -39,10 +39,19 @@
 
 
 <div class = "rank-container"> 
-    <div class = "rank"> Rank </div> 
-    <div class = "user-name"> User</div> 
-    <div class = "total-climbs"> Total Climbs </div> 
-    <div class = "best-climb"> Highest Grade </div> 
+    <table>
+        <tr>
+            <th> Rank </th>
+            <th> User </th>
+            <th> Total Climbs </th>
+            <th> Highest Climb </th>
+        </tr>
+    <div class = "rank-display"> 
+        <tr>
+        <td></td>
+        </tr>
+    </div>
+
 </div> 
 
   <footer>
