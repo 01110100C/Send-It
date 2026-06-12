@@ -4,6 +4,13 @@ session_start();
     include("database.php");
     include("functions.php");
 
+    $climb_title = mysql_real_escape_string($con, $_POST['climb_title']); 
+    $climb_grade = mysql_real_escape_string($con, $_POST['climb_grade']); 
+    $climb_info = mysql_real_escape_string($con, $_POST['climb_info']); 
+    $climb_location = mysql_real_escape_string($con, $_POST['climb_location']); 
+    $climb_picture = mysql_real_escape_string($con, $_POST['climb_picture']); 
+
+
 ?>
 
 
@@ -42,7 +49,7 @@ session_start();
                 <input type="text" name="Climb Title" placeholder="Title"><br><br>
                 <input type="text" name="Climb Grade" placeholder="Grade"><br><br>
                 <input type="text" name="Climb Info" placeholder="Extra Info"><br><br>
-                <input type="text" name="Picture" placeholder="Picture"><br><br>
+                <input type="photo" name="Picture" placeholder="Picture"><br><br>
                 <input type="text" name="Climb Location" placeholder="Location"><br><br>
 
                 <input type = "submit" value="submit climb"> 
