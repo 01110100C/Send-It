@@ -1,8 +1,14 @@
 <?php
 session_start();
+include("database.php");
+include("functions.php");
 
-    include("database.php");
-    include("functions.php");
+$sql = "SELECT post.*, users.username
+            FROM post 
+            JOIN users ON post.user_id = users.user_id
+            ORDER BY post.post_id DESC"; 
+
+$result = mysqli_query($con, $sql); 
 
 ?>
 
@@ -45,23 +51,39 @@ session_start();
 -->
 
     <h1> Community Feed </h1>
-<div class ="feed-container">
-<div class ="feed"> 
-    <div class="post">
-        <h2>Climber1 sent a V5!</h2>
-        <p> Grade: V5 </p>
-        <p> Location: The Spot </p>
-        <p> Date: 01/01/2026 </p>
-        <p> Comment: "This was a tough one, but I finally sent it!" </p>
-    </div>
-    <div class="post">
-        <h2>Climber2 sent a V3!</h2>
-        <p> Grade: V3 </p>
-        <p> Location: The Cave </p>
-        <p> Date: 01/02/2026 </p>
-        <p> Comment: "Had a great day climbing with friends!" </p>
-</div>
+<div class="feed-container">
+    <div class="feed">
 
+        <?php if (mysqli_num_rows($result) > 0): ?>
+
+            <?php while ($post = mysqli_fetch_assoc($result)): ?> 
+
+                <div class="post">
+                    <div class="post_header">
+                        <h3><?= htmlspecialchars($post['username']) ?></h3>
+                        <span><?= htmlspecialchars($post['climb_location']) ?></span>
+                    </div>
+
+                    <?php if (!empty($post['climb_picture'])): ?>
+                        <div class="image">
+                            <img src="<?= htmlspecialchars($post['climb_picture']) ?>" alt="Climb Photo">
+                        </div>
+                    <?php endif; ?>
+
+                    <div class="post_main">
+                        <h2><?= htmlspecialchars($post['climb_title']) ?></h2>
+                        <p>GRADE: <?= htmlspecialchars($post['climb_grade']) ?></p>
+                        <p><?= htmlspecialchars($post['climb_info']) ?></p>
+                    </div>
+                </div>
+
+            <?php endwhile; ?> 
+
+        <?php else: ?>
+            <p>No climbs posted yet.</p>
+        <?php endif; ?>
+
+    </div>
 </div>
 
 <!-- 
