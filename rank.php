@@ -17,6 +17,8 @@
             <li><a href="profile.php">Profile</a></li>
             <li><a href="train.php">Training</a></li>
             <li><a href="rank.php">Ranked</a></li>
+            <li><a href="logout.php">Log Out</a></li>
+
         </ul>
     </nav>
 <br>
