@@ -1,39 +1,37 @@
 <?php
 session_start();
- include("database.php");
- include("functions.php");
+include("database.php");
+include("functions.php");
 
-$user_id = $_SESSION['user_id']; 
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit();
+}
 
+$user_id = $_SESSION['user_id'];
 
-// Gets users information that is currently logged in
+// Get Profile Data for user currently logged in
 $profile_sql = "SELECT u.username, p.bio, p.location, p.year, p.profile_picture, p.highest_grade
-                FROM users u 
+                FROM users u
                 LEFT JOIN profile p ON u.user_id = p.user_id
-                WHERE u.user_id = ?"; 
+                WHERE u.user_id = ?";
+$stmt = mysqli_prepare($con, $profile_sql);
+mysqli_stmt_bind_param($stmt, "i", $user_id);
+mysqli_stmt_execute($stmt);
+$profile = mysqli_fetch_assoc(mysqli_stmt_get_result($stmt));
 
-$stmt = mysqli_prepare($con, $profile_sql); 
-mysqli_stmt_bind_param($stmt, "i", $user_id); 
-mysqli_stmt_execute($stmt); 
-$profile_result = mysqli_stmt_get_result($stmt); 
-$profile = mysqli_fetch_assoc($profile_result); 
-
-
-// Get the users posts
+// Get all posts created by user that is currently logged in
 $sql = "SELECT post.*, users.username
-            FROM post 
-            JOIN users ON post.user_id = users.user_id
-            WHERE post.user_id = ?;
-            ORDER BY post.post_id DESC"; 
-
-$stmt2 = mysqli_prepare($con, $sql); 
-mysqli_stmt_bind_param($stnt2, "i", $user_id); 
-mysqli_stmt_execute($stmt2); 
-
-$result = mysqli_stmt_get_result($stmnt2); 
-
-
+        FROM post
+        JOIN users ON post.user_id = users.user_id
+        WHERE post.user_id = ?
+        ORDER BY post.post_id DESC";
+$stmt2 = mysqli_prepare($con, $sql);
+mysqli_stmt_bind_param($stmt2, "i", $user_id);
+mysqli_stmt_execute($stmt2);
+$result = mysqli_stmt_get_result($stmt2);
 ?>
+
 
 
 
@@ -99,7 +97,7 @@ $result = mysqli_stmt_get_result($stmnt2);
         
 <br>
     </div>
-    <button class="edit-button" onclick="openEdit()"> Edit Profile </button>
+    <a href="editProfile.php"><button class="edit-button" > Edit Profile </button></a>
     </div> 
 
    <div class="social-row">

@@ -472,3 +472,19 @@ RANKS
   color: #0E8718; 
 
 }
+
+/*
+
+EDIT PROFILE 
+
+*/
+
+.profile-Form{
+   background-color: var(--green);
+  border: 4px solid var(--black);
+  color: var(--black);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+}
