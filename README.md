@@ -1,6 +1,6 @@
 <h1 align=center> Send It </h1>
 <div align=center>
- <img src="SenditLogo.png" alt="project logo" width="400" height = "350">
+ <img src="photos/SenditLogo.png" alt="project logo" width="400" height = "350">
 <h3 align=center> Software Development Capstone Project </h3>
 <h2>What is it?</h2>
 <p> Send It is a full stack web application that allows rock climbers to log their daily climbs, connect with friends, find local gyms, compete with others, and much more.
@@ -30,3 +30,6 @@ aims to be the perfect place to help climbers track climbs, make progress, and c
 
 </div>
 
+<h4> How to Run </h4>
+<p> 
+Download source code onto computer as a folder titled send-it. Make sure to have wamp or mamp downloaded on your computer. WAMP is for windows os and MAMP is for mac os. Make sure you have WAMP or MAMP turned on. After thats on you can go to your IDE of choice, I use VS code, add in the folder, and them go to localhost:8888/send-it/index.php. This will take you to the register / log in page. From here you can use the app as normal. </p>
