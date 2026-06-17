@@ -29,9 +29,9 @@ Global Styles
     text-align: center;
   }
 
-  .li {
+  li {
     text-align: left;
-    font-size: 10px; 
+    font-size: 15px; 
     color: black; 
   }
  
@@ -335,6 +335,7 @@ Training Page
   max-width: 600px;
   border-radius: 10px;
   font-size: 15px;
+  text-align: left;
 } 
 
 .fingerboard-training {
@@ -362,6 +363,8 @@ Training Page
   font-style: italic;
   text-align: center;
 }
+
+
 
 /*
 

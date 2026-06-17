@@ -59,6 +59,11 @@
                     <p> Helps build finger strength </p>
                     <li> Spray Wall Training </li>
                     <p> Helps build power and technique </p>
+                    <h2> Helpful Articles </h2>
+                </ul>
+                <ul>
+                            <li><a href="https://www.climbfit.com.au/our-top-ten-strength-training-and-bouldering-tips-for-beginners/">Tips for beginners</a></li>
+                            <li><a href="https://www.climbstrong.com/resource-posts/boulder-strength-skill-sessions"> Strength Training Plan</a></li>
                 </ul>
 
         </div> 
@@ -101,7 +106,7 @@
                     </ul>
 
                         <div class="tech-injury">
-                        <h4> Helpful Articles </h4>
+                        <h2> Helpful Articles </h2>
                         </div>
                         <ul>
                             <li><a href="https://www.trainingbeta.com/mark-and-mike-anderson-guide-to-hangboard-training"> Hangboard Training Guide</a></li>
@@ -113,6 +118,57 @@
             <div class="train-title">
             <h2>Technique Training</h2>
             </div>
+            <p> Technique training focuses on improving your movement, body positioning, 
+                foot positions, and precision. Good technique can drastically improve your climbing 
+                and make climbs feel easier without requiring more strength. 
+            </p>
+            <div class="tech">
+                <h4> Techniques </h4>
+                </div>
+                <ol>
+                    <li> Flagging</li>
+                    <p> Flagging is when one foot is put out to the press on the wall. 
+                        This helps you maintain balance and can help with bringing your hips to the wall.  </p> 
+                    <li> Rock Over </li>
+                    <p>  A rock over is when you pull the weight of your body over your foot. 
+                        You want to make sure you are not moving up, but moving your body to be center over your foot.
+                    </p>
+                    <li> Drop Knee </li>
+                    <p> A drop knee is when you have your foot on a hold and you twist your knee down and inwards.
+                        This helps give your corrisponding arm more reach. 
+                    </p>
+                    <li> Cross Through </li>
+                    <p> This is when you reach your arm across your body to be able to reach another hold. </p>
+                    <li> Match </li>
+                    <p> A match is when you have your hand on a hold and your bring your other hand to that same hold. 
+                        you are matching a signual hold with both hands. </p>
+                    <li>Heel Hook </li>
+                    <p> A heek hook helps you gain more tension on the wall and can act as and extra arm. To perform the heel hook 
+                        you want to angle your toes downward and away from the wall. Your foot lays side ways against the hold.
+                    </p>
+                    <li> Toe Hook </li>
+                    <p> The toe hook is when you place the top of your shoe into a hold and flex your ankles towards the hold. 
+                        This helps you gain more balance on the wall depending on the climb you are working on. 
+                    </p>
+                    <li> Mantle </li>
+                    <p> A mantle is when you go from underneath and hold and get on top of it. This can require a lot of strenght 
+                        and is performed simular to a muscle up. 
+                    </p>
+                    <li> Dyno </li>
+                    <p> A dyno is when you cannot reach a hold so you have tp swing and jump to it. 
+                        it is short for dynamic. 
+                    </p>
+                    <li> Deadpoint </li>
+                    <p> A deadpoint is when the hold you are aiming for is a slit or a pocket and you need to be extremely precise. 
+                    </p>
+
+                </ol>
+
+                <h2> Helpful Articles </h2>
+                <ul> 
+                    <li><a href="https://www.99boulders.com/climbing-moves-holds-and-technique"> Technique information </a></li>
+
+
 
         </div>
     </div>
