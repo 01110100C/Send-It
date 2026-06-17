@@ -85,7 +85,7 @@ $result = mysqli_query($con, $sql);
         <?php endif; ?>
 
     </div>
-</div>
+
 
 <!-- 
 Show people you follow that are also online 
@@ -96,17 +96,17 @@ take the followers and display the ones currently active on the table.
 Add a find friends button to look up users to add. When a user is looked up and selected it should 
 display that users profile. 
 -->
-<div class ="friends-online">
-    <h2>Friends Online</h2>
-    <ul>
-        <li>Climber2</li>
-        <li>Climber3</li>
-        <li>Climber4</li>
-    </ul>
+        <div class ="friends-online">
+                <h2>Friends Online</h2>
+                    <ul>
+                        <li>Climber2</li>
+                        <li>Climber3</li>
+                        <li>Climber4</li>
+                    </ul>
 
-<button type="button" class="buttons" onclick="location.href='findUsers.php'"> Find Friends </button> 
+                <button type="button" class="buttons" onclick="location.href='findUsers.php'"> Find Friends </button> 
+        </div>
 </div>
-
 </div>
 <br>
 <br>

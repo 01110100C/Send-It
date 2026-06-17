@@ -222,7 +222,6 @@ Community Feed
   border: 4px solid var(--black);
   color: var(--grey);
   padding: 20px;
-  max-width: 600px;
   border-radius: 10px;
   flex: 1;
 
@@ -235,7 +234,7 @@ Community Feed
   font-size: 10px ;
   padding: 15px;
   margin-bottom: 15px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .create {
