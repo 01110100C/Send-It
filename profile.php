@@ -1,8 +1,17 @@
 <?php
 session_start();
+ include("database.php");
+ include("functions.php");
 
-    include("database.php");
-    include("functions.php");
+
+$sql = "SELECT post.*, users.username
+            FROM post 
+            JOIN users ON post.user_id = users.user_id
+            ORDER BY post.post_id DESC"; 
+
+$result = mysqli_query($con, $sql); 
+
+
 
 ?>
 
@@ -41,15 +50,29 @@ session_start();
     <div class="profile-header">
     <!-- Placeholder for profile picture -->
             <div class="profile-picture">
-                <!-- You can replace this with an actual image source -->
+                <?php if ($profile_pic && file_exists($profile_pic)): ?>
+                    <img src="<?= htmlspecialchars($profile_pic) ?>" alt="Profile Picture"> 
+            
+                <?php else: ?>
+                    <?php endif; ?>
+        
             </div>
     </div>
 
     <div class="username">
-        <?php echo $_SESSION['username']; ?>
+        <?php echo $_SESSION['username'] ?? 'Guest'; ?>
     </div>
-    <div class="about"> Seattle, Washington | climbing since: 2018 </div>
-     </div> 
+    <div class="about"> 
+        <?php 
+        $about_parts = []; 
+        if ($locaction) $about_parts[] = $location; 
+        if($year) $about_parts[] = 'Climbing Since: ' . $year; 
+        echo implode(' | ', $about_parts); 
+        ?>
+
+    </div>
+    <button class="edit-button" onclick="openEdit()"> Edit Profile </button>
+    </div> 
 
    <div class="social-row">
         <div class="social-divider"></div>
@@ -74,9 +97,7 @@ session_start();
         <div class="bio-header">Bio</div>
         <div class="bio-content">
 
-        information about the user and their climbing history. 
-        This can include their favorite climbing styles, notable achievements, and any other relevant information 
-        that gives insight into their climbing journey.
+                <?= $bio ?>
 
         </div>
         </div>
@@ -86,9 +107,34 @@ session_start();
 <div class = "climbs"> 
     <h2> Recent Climbs </h2>
     <div class = "post">
-        <p> V5 at The Spot </p>
-        <p> Sent on 01/01/2026 </p>
-        <p> "This was a tough one, but I finally sent it!" </p>
+        <?php if (mysqli_num_rows($result) > 0): ?>
+
+            <?php while ($post = mysqli_fetch_assoc($result)): ?> 
+
+                <div class="post">
+                    <div class="post_header">
+                        <h3><?= htmlspecialchars($post['username']) ?></h3>
+                        <span><?= htmlspecialchars($post['climb_location']) ?></span>
+                    </div>
+
+                    <?php if (!empty($post['climb_picture'])): ?>
+                        <div class="image">
+                            <img src="<?= htmlspecialchars($post['climb_picture']) ?>" alt="Climb Photo">
+                        </div>
+                    <?php endif; ?>
+
+                    <div class="post_main">
+                        <h2><?= htmlspecialchars($post['climb_title']) ?></h2>
+                        <p>GRADE: <?= htmlspecialchars($post['climb_grade']) ?></p>
+                        <p><?= htmlspecialchars($post['climb_info']) ?></p>
+                    </div>
+                </div>
+
+            <?php endwhile; ?> 
+
+        <?php else: ?>
+            <p>No climbs posted yet.</p>
+        <?php endif; ?>
     </div>
 </div> 
 
@@ -103,7 +149,7 @@ session_start();
 <div class="stats-grid-top">
     <div class="stat-item">
         <span class="stat-label">Highest Grade:</span>
-        <span class="stat-value"> V8 </span>
+        <span class="stat-value"> <?= $highest_climb ?> </span>
     </div>
     <div class="stat-item">
         <span class="stat-label">Total Climbs:</span>

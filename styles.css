@@ -190,7 +190,7 @@ list-style: none;
   font-weight: 500;
   padding: 7px 16px;
   border-radius: 100px;
-  transition: color 0.2s, background 0.2s; 
+  transition: color 0.2s; 
   color: #888;
 }
 
