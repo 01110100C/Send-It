@@ -22,7 +22,7 @@ session_start();
 </head>
 <body>
     <br>
-     <img src="SenditLogo.png" alt="project logo" width="550" height = "400" style="border-radius: 15px;>">
+     <img src="photos/SenditLogo.png" alt="project logo" width="550" height = "400" style="border-radius: 15px;>">
         <div class="description" style="text-color: white; font-size: 20px;">
         <p> Welcome to Send It, your go-to platform for sharing and tracking climbs! </p>
         <p> To get started, please register for an account or log in if you already have one. </p>
