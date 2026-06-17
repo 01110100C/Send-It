@@ -50,8 +50,17 @@
         </tr>
     <div class = "rank-display"> 
         <tr>
-        <td></td>
+        <td>Ruby</td>
+        <td> User1 </td>
+        <td> 1 </td> 
+        <td> v17 </td>
         </tr>
+        <tr>
+            <td> Silver </td>
+            <td> TayC92 </td> 
+            <td> 2 </td> 
+            <td> v3 </td>
+</tr>
     </div>
 
 </div> 

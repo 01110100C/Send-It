@@ -22,8 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (!in_array($file_type, $allowed_types)) {
             $error_message = "Only JPG, PNG, GIF, WEBP are allowed.";
 
-        } elseif ($file_size > 5 * 1024 * 1024) {
-            $error_message = "Image must be smaller than 5MB.";
+        } elseif ($file_size > 30 * 1024 * 1024) {
+            $error_message = "Image must be smaller than 30MB.";
 
         } else {
             $extension    = pathinfo($_FILES['climb_picture']['name'], PATHINFO_EXTENSION);
@@ -92,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <input type="text" name="climb_grade" placeholder="Grade"><br><br>
                 <input type="text" name="climb_info" placeholder="Extra Info"><br><br>
                 <input type="text" name="climb_location" placeholder="Location"><br><br>
-                <label for="climb_picture"> Upload a photo (jpg, png, gif, webp - max 5mb):</label><br> 
+                <label for="climb_picture"> Upload a photo (jpg, png, gif, webp - max 30mb):</label><br> 
                 <input type="file" name = "climb_picture" accept="image/*"><br><br>
 
                 <input type = "submit" value="submit climb"> 
