@@ -26,16 +26,18 @@
 <br>
 
 <h1> Climbing Rankings </h1>
-<p>Climbers ranks are updated daily based on the grade level they are sending and how many sends they have. </p>
+<p>Climbers ranks are updated daily based on the average grade level they are sending and how many sends they have. </p>
+
 
 <div class = "ranks"> 
-    <p> Bedrock </p>
-    <p> Silver </p> 
-    <p> Granite </p>
-    <p> Quartz </p>
-    <p> Ruby </p>
-    <p> Diamond </p>
-    <p> Emerald </p>
+    <h3> RANKS </h3>
+    <p class="bedrock"> Bedrock </p>
+    <p class="silver"> Silver </p> 
+    <p class="granite"> Granite </p>
+    <p class="quartz"> Quartz </p>
+    <p class ="ruby"> Ruby </p>
+    <p class= "diamond"> Diamond </p>
+    <p class = "emerald"> Emerald </p>
 </div> 
 
 <div class = "rank-container"> 
@@ -43,8 +45,8 @@
         <tr>
             <th> Rank </th>
             <th> User </th>
-            <th> Total Climbs </th>
-            <th> Highest Climb </th>
+            <th> Total Sends </th>
+            <th> Average Grade </th>
         </tr>
     <div class = "rank-display"> 
         <tr>

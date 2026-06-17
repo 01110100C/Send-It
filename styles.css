@@ -413,3 +413,60 @@ th, td {
 th {
   background-color: var(--green); 
 }
+
+/* 
+
+RANKS
+
+*/
+
+.ranks { 
+ 
+  background-color: var(--green);
+  border: 4px solid var(--black);
+  color: var(--black);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+
+}
+
+
+.bedrock { 
+
+  color: #4B3561;
+
+}
+
+.silver {
+
+  color: #C4C4C4; 
+}
+
+.granite {
+
+  color: #2648C9; 
+}
+
+.quartz {
+
+  color: #E1DADA; 
+}
+
+.ruby {
+
+  color: #A80F0F; 
+}
+
+.diamond { 
+
+  color: #63DBEB; 
+
+}
+
+.emerald { 
+
+  color: #0E8718; 
+
+}

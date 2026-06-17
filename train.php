@@ -70,8 +70,8 @@
             <h4> Hangboards can help develop your finger strength and is an extremely useful tool </p>
             <p> Hangboards can come in many different shapes and sizes. Some are made of wood and some are made of plastic. 
                 they can have all different types of holds or edges. Below are some examples </p>
-                <img src="Beastmaker_hangboard.png" alt="Beastmaker Hangboard" width='300' height='150'>
-                <img src="Plastic_handboard.png" alt="Metolius Hangboard " width='300' height='150'>
+                <img src="photos/Beastmaker_hangboard.png" alt="Beastmaker Hangboard" width='300' height='150'>
+                <img src="photos/Plastic_handboard.png" alt="Metolius Hangboard " width='300' height='150'>
             <p> First step in hand boarding is technique to ensure we are preventing injury </p>
                 <div class="tech-injury">
                 <h4> Injury Prevention </h4>
