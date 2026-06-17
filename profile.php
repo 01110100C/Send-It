@@ -12,7 +12,6 @@ $sql = "SELECT post.*, users.username
 $result = mysqli_query($con, $sql); 
 
 
-
 ?>
 
 
@@ -48,14 +47,15 @@ $result = mysqli_query($con, $sql);
     <br>
 
     <div class="profile-header">
-    <!-- Placeholder for profile picture -->
+    <!-- Placeholder for profile picture 
             <div class="profile-picture">
                 <?php if ($profile_pic && file_exists($profile_pic)): ?>
                     <img src="<?= htmlspecialchars($profile_pic) ?>" alt="Profile Picture"> 
             
                 <?php else: ?>
                     <?php endif; ?>
-        
+                -->
+        <img src="photos/SenditLogo.png" style="width: 200px; height: 200px;">
             </div>
     </div>
 
@@ -63,13 +63,17 @@ $result = mysqli_query($con, $sql);
         <?php echo $_SESSION['username'] ?? 'Guest'; ?>
     </div>
     <div class="about"> 
+
+    Seattle, WA || 2025
+        <!--
         <?php 
         $about_parts = []; 
         if ($locaction) $about_parts[] = $location; 
         if($year) $about_parts[] = 'Climbing Since: ' . $year; 
         echo implode(' | ', $about_parts); 
         ?>
-
+        -->
+<br>
     </div>
     <button class="edit-button" onclick="openEdit()"> Edit Profile </button>
     </div> 
@@ -77,11 +81,11 @@ $result = mysqli_query($con, $sql);
    <div class="social-row">
         <div class="social-divider"></div>
         <div class="social-bar">
-          <strong>48</strong> Following
+          <strong>0</strong> Following
         </div>
         <div class="social-divider"></div>
         <div class="social-bar">
-          <strong>10</strong> Followers
+          <strong>0</strong> Followers
         </div>
         <button class="follow-btn">+ Follow</button>
       </div>
@@ -96,9 +100,12 @@ $result = mysqli_query($con, $sql);
     <div class="bio-section">
         <div class="bio-header">Bio</div>
         <div class="bio-content">
-
+            <p> Im am indoor climber from Washington state. I have been climbing 
+                for about a year now. Outside of rock climbing i enjoy coding and 
+                playing video games. </P>
+<!--
                 <?= $bio ?>
-
+                -->
         </div>
         </div>
     </div>
@@ -153,11 +160,11 @@ $result = mysqli_query($con, $sql);
     </div>
     <div class="stat-item">
         <span class="stat-label">Total Climbs:</span>
-        <span class="stat-value">150</span>
+        <span class="stat-value">2 </span>
     </div>
     <div class="stat-item">
         <span class="stat-label"> Climbing Streak:</span>
-        <span class="stat-value">30 days</span>
+        <span class="stat-value">2 days</span>
     </div>
 </div>
 </div>
