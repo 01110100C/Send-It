@@ -99,9 +99,9 @@ display that users profile.
         <div class ="friends-online">
                 <h2>Friends Online</h2>
                     <ul>
-                        <li>Climber2</li>
-                        <li>Climber3</li>
-                        <li>Climber4</li>
+                        <li>User1</li>
+                        <li>TayC92</li>
+                        <li>Salma_L</li>
                     </ul>
 
                 <button type="button" class="buttons" onclick="location.href='findUsers.php'"> Find Friends </button> 
