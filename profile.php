@@ -68,7 +68,7 @@ $result = mysqli_stmt_get_result($stmt2);
     <!-- User Specific Profile Picture -->
     <div class="profile-header">
             <div class="profile-picture">
-                <?php if ($profile_pic && file_exists($profile_pic)): ?>
+                <?php if ($profile['profile_picture'] && file_exists($profile_pic)): ?>
                     <img src="<?= htmlspecialchars($profile_pic) ?>" alt="Profile Picture" style="width:200px; height: 200px;"> 
             
                 <?php else: ?>
@@ -87,14 +87,11 @@ $result = mysqli_stmt_get_result($stmt2);
 
     <div class="about"> 
     <!-- Obtain about information for logged in user. Defaults set if user has not put in own info -->
-
-        <?php 
-        $about_parts = []; 
-        if (!empty($profile['locaction'])) $about_parts[] = htmlspecialchars($profile['location']); 
+     <?php
+   if (!empty($profile['locaction'])) $about_parts[] = htmlspecialchars($profile['location']); 
         if(!empty($profile['year'])) $about_parts[] = 'Climbing Since: ' . htmlspecialchars($profile['year']); 
         echo !empty($about_parts) ? implode(' || ', $about_parts) : 'No location yet'; 
         ?>
-        
 <br>
     </div>
     <a href="editProfile.php"><button class="edit-button" > Edit Profile </button></a>
@@ -173,7 +170,7 @@ $result = mysqli_stmt_get_result($stmt2);
 <div class="stats-grid-top">
     <div class="stat-item">
         <span class="stat-label">Highest Grade:</span>
-        <span class="stat-value"> <?= $highest_grade ?> </span>
+        <span class="stat-value"> <?= htmlspecialchars($profile['highest_grade']) ?> </span>
     </div>
     <div class="stat-item">
         <span class="stat-label">Total Climbs:</span>

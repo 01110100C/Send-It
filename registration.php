@@ -44,6 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 <body>
     <main>
+        <div class = "registration">
        <form method="post">
                 <input type="text" name="username" placeholder="Username" required><br><br>
                 <input type="password" name="password" placeholder="Password" required><br><br>
@@ -52,6 +53,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             </form> 
         
                <button type="button" class="buttons" onclick="location.href='index.php'">GO BACK</button>
+
+</div>
     </main>
 </body>
 </html>

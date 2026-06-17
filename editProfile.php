@@ -3,18 +3,56 @@ session_start();
 include("database.php"); 
 include("functions.php"); 
 
-$user_id = $_SESSION['user_id']; 
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-if($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $bio = trim($_POST['bio'] ?? 'No Bio Entered'); 
-    $location = trim($_POST['location'] ?? 'Unknown'); 
-    $year = trim($_POST['year'] ?? '0000'); 
-    $highest_grade = trim($_POST['highest_grade'] ?? 'v0'); 
+    $highest_grade   = mysqli_real_escape_string($con, $_POST['highest_grade']);
+    $bio   = mysqli_real_escape_string($con, $_POST['bio']);
+    $location    = mysqli_real_escape_string($con, $_POST['location']);
+    $year = mysqli_real_escape_string($con, $_POST['year']);
+    $user_id        = $_SESSION['user_id'];
+    $profile_picture  = "";
 
-    $profile_pic_path = null; 
+    if (isset($_FILES['profile_picture']) && $_FILES['profile_picture']['error'] === UPLOAD_ERR_OK) {
 
+        $upload_dir    = 'uploads/';
+        $allowed_types = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
+        $file_type     = $_FILES['profile_picture']['type'];
+        $file_size     = $_FILES['profile_picture']['size'];
+
+        if (!in_array($file_type, $allowed_types)) {
+            $error_message = "Only JPG, PNG, GIF, WEBP are allowed.";
+
+        } elseif ($file_size > 5 * 1024 * 1024) {
+            $error_message = "Image must be smaller than 5MB.";
+
+        } else {
+            $extension    = pathinfo($_FILES['profile_picture']['name'], PATHINFO_EXTENSION);
+            $new_filename = uniqid('profile_', true) . '.' . $extension;
+            $destination  = $upload_dir . $new_filename;
+
+            if (move_uploaded_file($_FILES['profile_picture']['tmp_name'], $destination)) {
+                
+                $climb_picture = mysqli_real_escape_string($con, $destination);
+            } else {
+                $error_message = "Failed to save your uploaded image.";
+            }
+        }
+    }
+
+    if (empty($error_message)) {
+        $sql = "INSERT INTO profile (user_id, profile_picture, bio, location, year, highest_grade)
+                VALUES ('$user_id', '$profile_picture', '$bio', '$location', '$year', '$highest_grade')";
+
+        
+        if (mysqli_query($con, $sql)) {
+            echo "New record created successfully";
+        } else {
+            echo "Error: " . mysqli_error($con);
+        }
+    }
+
+    mysqli_close($con);
 }
-
 ?>
 
 <!DOCTYPE html>
