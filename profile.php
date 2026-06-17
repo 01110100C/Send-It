@@ -173,7 +173,7 @@ $result = mysqli_stmt_get_result($stmt2);
 <div class="stats-grid-top">
     <div class="stat-item">
         <span class="stat-label">Highest Grade:</span>
-        <span class="stat-value"> <?= $highest_climb ?> </span>
+        <span class="stat-value"> <?= $highest_grade ?> </span>
     </div>
     <div class="stat-item">
         <span class="stat-label">Total Climbs:</span>
