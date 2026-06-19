@@ -24,12 +24,24 @@
     <br>
     <br>
     <br>
+    <br>
+    <br>
+    <br>
 
 
     <div>
         <h1 style="text-align: center;">Training Hub</h1>
-        <p>Welcome to the training hub! Here you can find resources and exercises to improve your skills.</p>
+        <p>Welcome to the training hub! Create your own personalized training plan here or view helpful articles below. </p>
     </div>  
+
+
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/6.18.0/gradio.js"
+></script>
+
+<gradio-app src="https://taylerc-rock-climbing-chat-bot.hf.space"></gradio-app>
+
 
     <div class="training-container">
         <div class="strength-training">
