@@ -15,6 +15,7 @@ aims to be the perfect place to help climbers track climbs, make progress, and c
   <li>MySQL</li>
   <li> HTML </li>
   <li> CSS </li>
+ <li> Python </li>
 </ul>
 
 <h2 align=center> Features </h2>
