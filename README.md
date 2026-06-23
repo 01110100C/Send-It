@@ -29,8 +29,8 @@ aims to be the perfect place to help climbers track climbs, make progress, and c
 <h4 align=center> Ranked Climbing </h4>
 <p> The ranked feature aims to motivate users to send more and try harder climbs. Points are given based on the grade of the climb. There are 6 ranks the user can work through. There is a leaderboard display, showing you the top 10 users in your current rank. Ranks will be reset every 3 months and users can see there earned badges on their profile. </p>
 
-</div>
 
 <h4> How to Run </h4>
 <p> 
 Download source code onto computer as a folder titled send-it. Make sure to have wamp or mamp downloaded on your computer. WAMP is for windows os and MAMP is for mac os. Make sure you have WAMP or MAMP turned on. After thats on you can go to your IDE of choice, I use VS code, add in the folder, and them go to localhost:8888/send-it/index.php. This will take you to the register / log in page. From here you can use the app as normal. </p>
+</div> 
