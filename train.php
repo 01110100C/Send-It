@@ -29,7 +29,7 @@
     <br>
     <div>
         <h1 style="text-align: center;">Training Hub</h1>
-        <p>Welcome to the training hub! Create your own personalized training plan here or view helpful articles below. </p>
+        <p>Welcome to the training hub! Create your own personalized training plan here. </p>
     </div>  
 
 
