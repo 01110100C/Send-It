@@ -33,8 +33,6 @@ $result = mysqli_stmt_get_result($stmt2);
 ?>
 
 
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -75,8 +73,6 @@ $result = mysqli_stmt_get_result($stmt2);
                     <!-- Default Profile Picture -->
                     <img src="photos/SenditLogo.png" style="width: 200px; height: 200px;">
                 <?php endif; ?>
-                
-        
             </div>
     </div>
 
