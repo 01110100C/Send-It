@@ -51,75 +51,71 @@ $result = mysqli_query($con, $sql);
 
 -->
 
-    <h1> Community Feed </h1>
-<div class="feed-container">
+<h1>Community Feed</h1>
+
+<div class="feed-wrapper">
+
+  <div class="feed-container">
     <div class="feed">
 
-        <?php if (mysqli_num_rows($result) > 0): ?>
+      <?php if (mysqli_num_rows($result) > 0): ?>
 
-            <?php while ($post = mysqli_fetch_assoc($result)): ?> 
+        <?php while ($post = mysqli_fetch_assoc($result)): ?>
 
-                <div class="post">
-                    <div class="post_header">
-                        <h3><?= htmlspecialchars($post['username']) ?></h3>
-                        <span><?= htmlspecialchars($post['climb_location']) ?></span>
-                    </div>
+          <div class="post">
+            <div class="post_header">
+              <h3><?= htmlspecialchars($post['username']) ?></h3>
+              <span><?= htmlspecialchars($post['climb_location']) ?></span>
+            </div>
 
-                    <?php if (!empty($post['climb_picture'])): ?>
-                        <div class="image">
-                            <img src="<?= htmlspecialchars($post['climb_picture']) ?>" alt="Climb Photo">
-                        </div>
-                    <?php endif; ?>
+            <?php if (!empty($post['climb_picture'])): ?>
+              <div class="image">
+                <img src="<?= htmlspecialchars($post['climb_picture']) ?>" alt="Climb Photo">
+              </div>
+            <?php endif; ?>
 
-                    <div class="post_main">
-                        <h2><?= htmlspecialchars($post['climb_title']) ?></h2>
-                        <p>GRADE: <?= htmlspecialchars($post['climb_grade']) ?></p>
-                        <p><?= htmlspecialchars($post['climb_info']) ?></p>
-                    </div>
-                </div>
+            <div class="post_main">
+              <h2><?= htmlspecialchars($post['climb_title']) ?></h2>
+              <p>GRADE: <?= htmlspecialchars($post['climb_grade']) ?></p>
+              <p><?= htmlspecialchars($post['climb_info']) ?></p>
+            </div>
+          </div>
 
-            <?php endwhile; ?> 
+        <?php endwhile; ?>
 
-        <?php else: ?>
-            <p>No climbs posted yet.</p>
-        <?php endif; ?>
+      <?php else: ?>
+        <p>No climbs posted yet.</p>
+      <?php endif; ?>
 
     </div>
+  </div>
 
+  <!--
+  Show people you follow that are also online
+  include php functions to pull from the profile table to see who the user follows.
+  take the followers and display the ones currently active on the table.
 
-<!-- 
-Show people you follow that are also online 
- 
-include php functions to pull from the profile table to see who the uder follows. 
-take the followers and display the ones currently active on the table. 
+  Add a find friends button to look up users to add. When a user is looked up and selected it should
+  display that users profile.
+  -->
 
-Add a find friends button to look up users to add. When a user is looked up and selected it should 
-display that users profile. 
--->
-        <div class ="friends-online">
-                <h2>Friends Online</h2>
-                    <ul>
-                        <li>User1</li>
-                        <li>TayC92</li>
-                        <li>Salma_L</li>
-                    </ul>
+  <div class="feed-right">
 
-                <button type="button" class="buttons" onclick="location.href='findUsers.php'"> Find Friends </button> 
-        </div>
+    <div class="friends-online">
+      <h2>Friends Online</h2>
+      <ul>
+      </ul>
+      <button type="button" class="buttons" onclick="location.href='findUsers.php'">Find Friends</button>
+    </div>
+
+    <div class="create">
+      <h3>Click here to create a post</h3>
+      <button type="button" class="buttons" onclick="location.href='createClimb.php'">Create Post</button>
+    </div>
+
+  </div>
+
 </div>
-</div>
-<br>
-<br>
-<div class = "create"> 
-    <h3> click here to create a post </h3> 
-        <br>
-        <br>
-        <button type="button" class="buttons" onclick="location.href='createClimb.php'">Create Post</button>
-</div>
-
-
-
-
     <footer>
         <p>© 2026 Send It. All rights reserved.</p>
     </footer>

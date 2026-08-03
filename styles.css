@@ -18,12 +18,13 @@ Global Styles
       --white: #fff;
       --green: #486941;
       --grey: #ADB1B3;
+      --Lblack: #27272B; 
 
 
     }
 
   body {
-    background-color: var(--blue);
+    background-color: var(--Lblack);
     color: var(--grey);
     font: 16px/1.5 "Press Start 2P", system-ui;
     text-align: center;
@@ -200,9 +201,23 @@ list-style: none;
 Community Feed 
 
 */ 
+
+.feed-wrapper {
+  display: flex;
+  gap: 20px; 
+  align-items: flex-start;
+}
+
+.feed-right{ 
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  flex: 1;
+}
 .feed-container {
   display: flex;
   gap: 15px; 
+  flex: 3; 
 }
 
 
@@ -243,12 +258,13 @@ Community Feed
   color: var(--grey);
   font-size: 15px ;
   padding: 15px;
-  width: 800px;
-  height: 150px;
-  text-align:  center;
+  border-radius: 10px; 
+  width: 800px; 
+  height: 150px; 
+  text-align: center; 
   margin-left: auto;
   margin-right: auto;
-  
+
 }
 
 /*
@@ -312,6 +328,7 @@ Profile Page
   border-radius: 10px;
 
 }
+
 
 /* 
 
