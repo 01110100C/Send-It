@@ -159,7 +159,7 @@ nav {
   gap: 4px; 
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 100px;
+  border-radius: 0px;
   padding: 6px 8px;
   white-space: nowrap;
   transition: box-shows 0.3s;
@@ -256,6 +256,18 @@ Community Feed
 Profile Page 
 
 */
+
+.profile-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; 
+}
+
+.profile-left {
+  display: flex; 
+  flex-direction: column; 
+  gap: 20px; 
+}
 
 .stats-section {
   background-color: var(--green);

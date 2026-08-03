@@ -33,12 +33,16 @@
     </div>  
 
 
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/6.18.0/gradio.js"
-></script>
+    <iframe
+	src="https://taylerc-rock-climbing-chat-bot.hf.space"
+	frameborder="0"
+	width="850"
+	height="450"
+    ></iframe>
 
-<gradio-app src="https://taylerc-rock-climbing-chat-bot.hf.space"></gradio-app>
+
+
+
       <footer>
         <p>© 2026 Send It. All rights reserved.</p>
     </footer>

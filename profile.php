@@ -110,15 +110,41 @@ $result = mysqli_stmt_get_result($stmt2);
   <br>
   <br>
 
-
+<div class  ="profile-content">
+    <div class ="profile-left">
   <!-- BIO -->
     <div class="bio-section">
         <div class="bio-header">Bio</div>
         <div class="bio-content">
                 <?= !empty($profile['bio']) ? htmlspecialchars($profile['bio']) : 'no bio yet' ?>
         </div>
+    
         </div>
+
+<!-- User Stats --> 
+ <div class="stats-section">
+    
+ <div class="stats-header">
+    <span class="stats-title">Climbing Stats</span>
+    <div class="section-line"></div>
+</div>
+
+<div class="stats-grid-top">
+    <div class="stat-item">
+        <span class="stat-label">Highest Grade:</span>
+        <span class="stat-value"> <?= htmlspecialchars($profile['highest_grade']) ?> </span>
     </div>
+    <div class="stat-item">
+        <span class="stat-label">Total Climbs:</span>
+        <span class="stat-value">2 </span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-label"> Climbing Streak:</span>
+        <span class="stat-value">2 days</span>
+    </div>
+</div>
+</div>
+                </div>
 
 <!-- User Climbs -->
 <div class = "climbs"> 
@@ -155,29 +181,7 @@ $result = mysqli_stmt_get_result($stmt2);
     </div>
 </div> 
 
-<!-- User Stats --> 
- <div class="stats-section">
-    
- <div class="stats-header">
-    <span class="stats-title">Climbing Stats</span>
-    <div class="section-line"></div>
-</div>
-
-<div class="stats-grid-top">
-    <div class="stat-item">
-        <span class="stat-label">Highest Grade:</span>
-        <span class="stat-value"> <?= htmlspecialchars($profile['highest_grade']) ?> </span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-label">Total Climbs:</span>
-        <span class="stat-value">2 </span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-label"> Climbing Streak:</span>
-        <span class="stat-value">2 days</span>
-    </div>
-</div>
-</div>
+ </div>
   <footer>
         <p>© 2026 Send It. All rights reserved.</p>
     </footer>
