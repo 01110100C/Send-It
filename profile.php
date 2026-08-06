@@ -8,24 +8,32 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
-$user_id = $_SESSION['user_id'];
+// Determine whihc user to show 
 
-// Get Profile Data for user currently logged in
+if(isset($_GET['id'])) {
+    $user_id = intval($_GET['id']);
+} else {
+    $user_id = $_SESSION['user_id'];
+}
+
+$is_own_profile = ($user_id === (int) $_SESSION['user_id']);
+
+// Get Profile Data for the selected user
 $profile_sql = "SELECT u.username, p.bio, p.location, p.year, p.profile_picture, p.highest_grade
-                FROM users u
-                LEFT JOIN profile p ON u.user_id = p.user_id
-                WHERE u.user_id = ?";
+FROM users u
+LEFT JOIN profile p ON u.user_id = p.user_id
+WHERE u.user_id = ?";
 $stmt = mysqli_prepare($con, $profile_sql);
 mysqli_stmt_bind_param($stmt, "i", $user_id);
 mysqli_stmt_execute($stmt);
 $profile = mysqli_fetch_assoc(mysqli_stmt_get_result($stmt));
 
-// Get all posts created by user that is currently logged in
+// Get all posts created by the selected user
 $sql = "SELECT post.*, users.username
-        FROM post
-        JOIN users ON post.user_id = users.user_id
-        WHERE post.user_id = ?
-        ORDER BY post.post_id DESC";
+FROM post
+JOIN users ON post.user_id = users.user_id
+WHERE post.user_id = ?
+ORDER BY post.post_id DESC";
 $stmt2 = mysqli_prepare($con, $sql);
 mysqli_stmt_bind_param($stmt2, "i", $user_id);
 mysqli_stmt_execute($stmt2);
