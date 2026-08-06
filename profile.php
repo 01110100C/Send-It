@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
-// Determine whihc user to show 
+// Determine which user to show 
 
 if(isset($_GET['id'])) {
     $user_id = intval($_GET['id']);
