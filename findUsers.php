@@ -16,16 +16,21 @@ if (isset($_GET['q'])) {
 
     $searchTerm = '%' . $query . '%';
 
-    $stmt = $pdo->prepare("
+    $stmt = mysqli_prepare($con, "
         SELECT id, username
         FROM users
-        WHERE username LIKE :term 
+        WHERE username LIKE ?
         ORDER BY username ASC
         LIMIT 20
     ");
-    $stmt->execute(['term' => $searchTerm]);
+    mysqli_stmt_bind_param($stmt, "s", $searchTerm);
+    mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
 
-    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $results = [];
+    while ($row = mysqli_fetch_assoc($result)) {
+        $results[] = $row;
+    }
 
     echo json_encode($results);
     exit;
