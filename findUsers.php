@@ -17,7 +17,7 @@ if (isset($_GET['q'])) {
     $searchTerm = '%' . $query . '%';
 
     $stmt = mysqli_prepare($con, "
-        SELECT id, username
+        SELECT user_id, username
         FROM users
         WHERE username LIKE ?
         ORDER BY username ASC
@@ -84,7 +84,7 @@ input.addEventListener('input', () => {
             .then(data => {
                 results.innerHTML = data.map(u => `
                     <div class="user-result">
-                        <a href="profile.php?id=${u.id}">${u.username}</a>
+                        <a href="profile.php?id=${u.user_id}">${u.username}</a>
                     </div>
                 `).join('');
             });

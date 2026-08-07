@@ -84,10 +84,10 @@ $result = mysqli_stmt_get_result($stmt2);
             </div>
     </div>
 
- <!-- Pull user name from current session -->
+ <!-- Pull user name from current session or looked up user -->
     <div class="username">
-        <?php echo $_SESSION['username'] ?? 'Guest'; ?>
-    </div>
+        <?php echo htmlspecialchars($profile['username'] ?? 'Guest'); ?>
+</div>
 
     <div class="about"> 
     <!-- Obtain about information for logged in user. Defaults set if user has not put in own info -->
@@ -140,7 +140,7 @@ $result = mysqli_stmt_get_result($stmt2);
 <div class="stats-grid-top">
     <div class="stat-item">
         <span class="stat-label">Highest Grade:</span>
-        <span class="stat-value"> <?= htmlspecialchars($profile['highest_grade']) ?> </span>
+        <span class="stat-value"> <?= htmlspecialchars($profile['highest_grade'] ?? 'N/A') ?> </span>
     </div>
     <div class="stat-item">
         <span class="stat-label">Total Climbs:</span>
